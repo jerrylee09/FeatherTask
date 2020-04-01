@@ -53,4 +53,28 @@ sign in into your account
 
 1. Click CREATE APPLICATION
 2. Enter your title, click CREATE
-3. Fill in the fields with *
+3. Upload apk from /android/app/build/output/apk/release/app-release.apk
+4. Fill in the fields with * and load images as needed
+5. Save As Draft
+6. Click on app release tab
+# App release Tab
+1. Click manage on production/ click CREATE RELEASE
+2. Click continue on App signing Google play
+3. Enter description in "What's new in this release?" inside the bracket.
+4. Click Content Rating tab
+# Content Rating
+1. Fill in the fields with *
+2. Select category and select the following.
+3. Click save questionaire
+4. Click calculate rating
+5. Click Apply rating
+6. Click Price & distribution tab
+# Price & distribution
+1. Select Available
+2. Fill and check in the fields with *
+3. Click save draft
+3. Click App release tab
+# App Release
+1. Click Edit Release
+2. Click Review
+3. Click start rollout and confirm
