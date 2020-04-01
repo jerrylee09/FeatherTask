@@ -7,11 +7,18 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "clean:node_module": "rm -rf node_modules && npm install",
+    "clean:package": "watchman watch-del-all && npm run clean:node_module && rm -rf /tmp/metro-bundler-cache-* && rm -rf /tmp/haste-map-react-native-packager-* && rm -fr $TMPDIR/metro* && cd ios && pod install && cd .. && cd android && ./gradlew clean",
+    "link": "react-native link",
+    "doctor": "npx @react-native-community/cli doctor",
+    "postinstall": "cd ios && pod install"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.8.1",
     "react": "16.11.0",
-    "react-native": "0.62.0"
+    "react-native": "0.62.0",
+    "react-native-check-box": "^2.1.7"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
