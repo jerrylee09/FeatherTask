@@ -80,3 +80,14 @@ sign in into your account
 1. Click Edit Release
 2. Click Review
 3. Click start rollout and confirm
+
+# change Version of app on
+android/app/build.gradle
+
+defaultConfig {
+        applicationId "com.feathertask"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 3   <-- change version as needed
+        versionName "3.0" <-- change version as needed
+    }
