@@ -43,9 +43,11 @@ android {
 On your project terminal
 cd android
 mac
-./gradlew assembleRelease
+./gradlew bundleRelease
 window
-gradlew assembleRelease
+gradlew bundleRelease
+
+upload file to playstore android/app/build/outputs/bundle/release/app.aab
 
 # Create Your App
 https://developer.android.com/distribute/console
